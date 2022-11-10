@@ -2,50 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device --> 
   <title>Frontend Mentor | Notifications page</title>
-
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-  Notifications 3
-
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
+<body> 
+  <div class="container">
+    <header>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <h4 class="me-3">Notifications</h4>
+          <h5 class="rounded d-flex align-items-center justify-content-center text-white" style="width:33px; background-color: rgb(16, 61, 146);">3</h5>
+        </div>
+        <div>
+          <p class='mark-as-read' style="color: rgb(14, 87, 170); font-weight:500;" onclick="readStatus()">Mark all as read</p>
+        </div>
+      </div>
+    </header>
+    <div>
+      <div class="d-flex align-items-center px-3 my-5 read-mark message-box">
+        <img src="./assets/images/avatar-mark-webber.webp" alt=""> 
+        <div>
+          <p style="margin-left: 20px; margin-bottom: 2px;"><span class="fw-bold">Mark Webber</span> reacted to your recent post <span class="fw-bold">My first tournament today!</span><span class="read-status"></span></p>
+          <p style="margin-left: 20px; margin-top: 1px;">1m ago</p>
+        </div>
+    </div>
+    <div>
+    <div class="d-flex align-items-center px-3 my-5 read-mark message-box " style="background-color: hsl(210, 60%, 98%); height: 100px; border-radius: 8px;">
+      <img src="./assets/images/avatar-angela-gray.webp" alt=""> 
+      <div>
+        <p style="margin-left: 20px; margin-bottom: 2px;"><span class="fw-bold">Angela Gray</span> followed you.</span><span class="read-status"></span></p>
+        <p style="margin-left: 20px; margin-top: 1px;">5m ago</p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center px-3 my-5 read-mark message-box " style="background-color: hsl(210, 60%, 98%); height: 100px; border-radius: 8px;">
+      <img src="./assets/images/avatar-jacob-thompson.webp" alt=""> 
+      <div>
+        <p style="margin-left: 20px; margin-bottom: 2px;"><span class="fw-bold">Jacob Thompson</span> has joined your group Chess Club.</span><span class="read-status"></span></p>
+        <p style="margin-left: 20px; margin-top: 1px;">1 day ago</p>
+      </div>
+    </div>
+    <div>
+      <div class="d-flex align-items-center px-3 my-5" style="height: 90px; border-radius: 8px;">
+        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt=""> 
+        <div style="margin-bottom: 0;">
+          <p style="margin-left: 20px; margin-bottom: 2px;"><span class="fw-bold">Rizky Hasanuddin</span><span class="read-status"></span></p>
+          <p style="margin-left: 20px; margin-top: 1px;">5 days ago</p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center px-3 my-5 read-mark message-box " style="background-color: hsl(210, 60%, 98%); height: 60px; border-radius: 8px; margin-top: 0; margin-left: 120px;">
+        <p>
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.
+        </p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center px-3 my-5 read-mark message-box " style="height: 100px; border-radius: 8px;">
+      <img src="./assets/images/avatar-kimberly-smith.webp" alt=""> 
+      <div>
+        <p style="margin-left: 20px; margin-bottom: 2px;"><span class="fw-bold">Kimberly Smith</span> commented on your pictureb.<span class="read-status"></span></p>
+        <p style="margin-left: 20px; margin-top: 1px;">1 week ago</p>
+      </div>
+    </div>    
+    <div class="d-flex align-items-center px-3 my-5 read-mark message-box " style="height: 100px; border-radius: 8px;">
+      <img src="./assets/images/avatar-nathan-peterson.webp" alt=""> 
+      <div>
+        <p style="margin-left: 20px; margin-bottom: 2px;"><span class="fw-bold">Nathan Peterson</span> reacted to your recent post 5 end-game strategies to increase your win rate.<span class="read-status"></span></p>
+        <p style="margin-left: 20px; margin-top: 1px;">2 weeks ago</p>
+      </div>
+    </div>    
+    <div class="d-flex align-items-center px-3 my-5 read-mark message-box " style="height: 100px; border-radius: 8px;">
+      <img src="./assets/images/avatar-anna-kim.webp" alt=""> 
+      <div>
+        <p style="margin-left: 20px; margin-bottom: 2px;"><span class="fw-bold">Anna Kim</span> left the group Chess Club.<span class="read-status"></span></p>
+        <p style="margin-left: 20px; margin-top: 1px;">2 weeks ago</p>
+      </div>
+    </div>    
+    
+    <footer class="my-5 d-flex justify-content-center">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Baiju Abraham</a>.
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <script>
+      const boxes = document.querySelectorAll('.message-box');
+      for (i=0; i < boxes.length; i++) {
+        const a=i;
+        boxes[i].addEventListener('click', function() {
+         document.querySelectorAll('.read-status')[a].classList.add('dot');
+        })
+      }
+    
+
+    </script>
+    <script>
+      function readStatus() {  
+       const readMessage = document.getElementsByClassName('read-mark')
+       for (i=0; i<readMessage.length; i++){
+       readMessage[i].style.backgroundColor = "hsl(205, 33%, 90%)";
+      }
+      const readMark = document.getElementsByClassName("read-status");
+      for (i=0; i<readMark.length; i++) {
+        readMark[i].classList.add("dot");
+      }
+      }
+    </script>
+  
   </div>
 </body>
 </html>

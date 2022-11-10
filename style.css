@@ -3,3 +3,38 @@
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.notification-count {
+    background-color:blue;
+    width: 30px;
+    height: 26px;
+}
+
+.message-box {
+    width: auto;
+    height: 100px;
+    border-radius: 8px;
+    cursor: pointer;   
+}
+
+.message-box:hover {
+    background-color: hsl(210, 60%, 98%);
+}
+
+
+
+.dot {
+    width: 10px; 
+    height:10px; 
+    border-radius:50%; 
+    background-color:red; 
+    display: inline-block; 
+    margin-left: 10px;
+}
+
+.mark-as-read {
+    cursor: pointer;
+}
