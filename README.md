@@ -1,6 +1,6 @@
 # Frontend Mentor - Notifications page
 
-![Design preview for the Notifications page coding challenge](./design/desktop-preview.jpg)
+!Live Site](https://github.com/baijuka/Notifications-page)
 
 ## Welcome! 👋
 
