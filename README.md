@@ -1,6 +1,6 @@
 # Frontend Mentor - Notifications page
 
-![Live Site](https://github.com/baijuka/Notifications-page)
+[Live Site](https://baijuka.github.io/Notifications-page/)
 
 ## Welcome! 👋
 
